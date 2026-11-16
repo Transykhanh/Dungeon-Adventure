@@ -1,0 +1,11 @@
+res://world.tscn
+res://Godot/Slime/slime_frames.tres
+res://Enemies/directional_enemy.gd
+res://Goblin/goblin.gd
+res://Slime/slime.gd
+res://Ghost/Ghost.tscn
+res://Goblin/Goblin.tscn
+res://Player/player.gd
+res://Player/Player.tscn
+res://Skeleton/Skeleton.tscn
+res://Slime/Slime.tscn

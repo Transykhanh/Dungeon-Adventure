@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://0c4gir8fp1mx"]
+
+[ext_resource type="Script" uid="uid://d3jjru0wtkvc2" path="res://Enemies/directional_enemy.gd" id="1_enemy"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ghost"]
+radius = 6.0
+
+[node name="Ghost" type="CharacterBody2D" unique_id=1603622461]
+collision_layer = 2
+script = ExtResource("1_enemy")
+sprite_sheet_path = "res://Godot/ghost/ghost-sheet.png"
+sprite_data_path = "res://Godot/ghost/ghost-sheet.json"
+move_speed = 82.0
+attack_cooldown = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1603622462]
+shape = SubResource("CircleShape2D_ghost")
+
+[node name="Container" type="Node2D" parent="." unique_id=1603622463]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Container" unique_id=1603622464]
+scale = Vector2(0.75, 0.75)

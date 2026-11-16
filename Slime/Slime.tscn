@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dnymypkxxnbv7"]
+
+[ext_resource type="Script" uid="uid://icvb2w0i74th" path="res://Slime/slime.gd" id="1_script"]
+[ext_resource type="SpriteFrames" uid="uid://b4hqfy6vatmfj" path="res://Godot/Slime/slime_frames.tres" id="2_frames"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_slime"]
+
+[node name="Slime" type="CharacterBody2D" unique_id=1388393291]
+collision_layer = 2
+script = ExtResource("1_script")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=904586788]
+shape = SubResource("CircleShape2D_slime")
+
+[node name="Container" type="Node2D" parent="." unique_id=1856140093]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Container" unique_id=1516122825]
+position = Vector2(0.50000083, -2.750001)
+scale = Vector2(0.39583337, 0.30208334)
+sprite_frames = ExtResource("2_frames")
+animation = &"idle"

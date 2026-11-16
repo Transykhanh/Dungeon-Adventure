@@ -1,0 +1,11 @@
+[gd_resource type="CanvasTexture" load_steps=4 format=3]
+
+[ext_resource type="Texture2D" path="knight_sheet.png" id="1_d"]
+[ext_resource type="Texture2D" path="knight_sheet_n.png" id="2_n"]
+[ext_resource type="Texture2D" path="knight_sheet_s.png" id="3_s"]
+
+[resource]
+diffuse_texture = ExtResource("1_d")
+normal_texture = ExtResource("2_n")
+specular_texture = ExtResource("3_s")
+specular_shininess = 0.5
